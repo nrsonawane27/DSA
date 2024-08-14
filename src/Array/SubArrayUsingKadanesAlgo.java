@@ -37,7 +37,5 @@ public class SubArrayUsingKadanesAlgo {
         //max sum of subarray using kadanes algorithm
         System.out.println("\nsubarray of array\n");
         kadanes(arr);
-
-
     }
 }
