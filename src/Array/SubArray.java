@@ -3,6 +3,8 @@ package Array;
 import java.util.Scanner;
 
 public class SubArray {
+
+    //Method for Subarray
     public static void sub(int number[]){
         for(int i=0;i<number.length;i++){
             for(int j=i;j<number.length;j++){
