@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SubArrayUsingKadanesAlgo {
 
-    //Implementation of Kadanes algorithm
+    //Implementation of Kadanes algorithm to find the max sum of subarray
     public static void kadanes(int number[]){
         int maxSum=Integer.MIN_VALUE;
         int currSum=0;
