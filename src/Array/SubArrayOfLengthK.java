@@ -5,6 +5,8 @@
 package Array;
 
 public class SubArrayOfLengthK {
+
+
     public static void main(String[] args) {
         int []arr = new int[]{-3, 4, -2, 5, 3, -2, 8, 2, 1, 4};
 
@@ -18,15 +20,15 @@ public class SubArrayOfLengthK {
         int maxSum = Integer.MIN_VALUE;
         for(int i=0; i<= arr.length-k; i++) {
             int sum = 0;
-            for(int j=i; j<i+k; j++) {
-                System.out.print(arr[j]+" ");
+            for (int j = i; j < i + k; j++) {
+                System.out.print(arr[j] + " ");
                 sum += arr[j];
             }
-            System.out.println(" : "+sum);
-            if(maxSum < sum) {
+            System.out.println(" : " + sum);
+            if (maxSum < sum) {
                 maxSum = sum;
             }
-
+        }
 
         System.out.println("Maximum sum subarray of length k : " +maxSum);
 
