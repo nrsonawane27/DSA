@@ -4,6 +4,7 @@
 package Array;
 
 public class SubArrayUsingPrefixSum {
+
     public static void sub(int number[]){
         int maxSum=Integer.MIN_VALUE;
         int currSum=0;
@@ -16,11 +17,9 @@ public class SubArrayUsingPrefixSum {
         }
 
         for(int i=0;i<number.length;i++){
-            //int start=i;
             for(int j=i;j<number.length;j++){
-                //int end=j
 
-                currSum = i/*start */ == 0 ? prefix[j/*end */] : prefix[ j /*end */]-prefix[i-1];
+                currSum = i== 0 ? prefix[j] : prefix[j]-prefix[i-1];
 
                 if(maxSum<currSum){
                     maxSum=currSum;
@@ -30,9 +29,11 @@ public class SubArrayUsingPrefixSum {
         System.out.println("The maximum sum is:"+maxSum);
 
     }
+
     public static void main(String args[]){
         int arr[] = {7,8,9,3,5,3,2,8};
-        //subarray of array
+
+        //maximum sum of subarray of given array
         System.out.println("\nsubarray of array\n");
         sub(arr);
 
