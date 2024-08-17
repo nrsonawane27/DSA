@@ -9,7 +9,7 @@ public class SubArrayUsingKadanesAlgo {
         int maxSum=Integer.MIN_VALUE;
         int currSum=0;
 
-        for(int i=0;i<number.length;i++){
+        for(int i=0; i<number.length; i++){
             currSum = currSum + number[i];
 
             if(currSum<0){
