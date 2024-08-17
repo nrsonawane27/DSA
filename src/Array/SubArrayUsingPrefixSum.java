@@ -1,3 +1,6 @@
+/*
+  find the maximum sum of subarray using prefix sum
+ */
 package Array;
 
 public class SubArrayUsingPrefixSum {
@@ -16,18 +19,13 @@ public class SubArrayUsingPrefixSum {
             //int start=i;
             for(int j=i;j<number.length;j++){
                 //int end=j
-//                System.out.println("(");
 
                 currSum = i/*start */ == 0 ? prefix[j/*end */] : prefix[ j /*end */]-prefix[i-1];
 
-//                System.out.print("the sum of subarray is:"+currSum);
                 if(maxSum<currSum){
                     maxSum=currSum;
                 }
-//                System.out.println(")");
-                System.out.println();
             }
-            System.out.println();
         }
         System.out.println("The maximum sum is:"+maxSum);
 
