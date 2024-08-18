@@ -11,6 +11,7 @@ public class RightMax {
 
         int []rightmax = new int[10];
         rightmax[9] = arr[9];
+        //carry forward mathod
         for(int i=arr.length-2; i>=0; i--) {
             if(arr[i] > rightmax[i+1]){
                 rightmax[i] = arr[i];
