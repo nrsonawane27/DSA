@@ -30,6 +30,11 @@ public class TransposeOfMatrix {
         System.out.println("Square matrix Transpose");
         print(arr);
 
+        /*
+           time complexity  = O(n^2)
+           space complexity = O(1)
+         */
+
 
         //transpose of rectangular matrix
         int [][]arr2 = new int[4][5];
@@ -48,6 +53,12 @@ public class TransposeOfMatrix {
             }
         }
 
-        print(arr2);
+        System.out.println("\nTranspose of rectangular matrix");
+        print(newarr);
+
+        /*
+           time complexity  = O(n^2)
+           space complexity = O(n)
+         */
     }
 }
