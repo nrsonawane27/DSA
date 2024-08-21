@@ -1,3 +1,7 @@
+/*
+     max sum of subaary having length k using sliding window algorithm
+ */
+
 package Array;
 
 public class SlidingWindow {
