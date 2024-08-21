@@ -1,7 +1,7 @@
 /*
-   Implementation of carry forward method
-    using carry forward method change the element of array with the current max number
-    until the next element is greater than current element from side right side of array
+   Given an array of size N. Build an array rightmax of size N.
+   Rightmax of i contains the maximum for the index i to the index N-1.
+   (Using carry forward method)
  */
 package Array;
 public class RightMax {
