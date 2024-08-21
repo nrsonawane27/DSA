@@ -9,19 +9,19 @@ public class RightMax {
         int []arr = {-3, 6, 2, 4, 5, 2, 8, -9, 3, 1};
 
 
-        int []rightmax = new int[10];
-        rightmax[9] = arr[9];
-        //carry forward mathod
+        int []rightMax = new int[10];
+        rightMax[9] = arr[9];
+        //carry forward method
         for(int i=arr.length-2; i>=0; i--) {
-            if(arr[i] > rightmax[i+1]){
-                rightmax[i] = arr[i];
+            if(arr[i] > rightMax[i+1]){
+                rightMax[i] = arr[i];
             } else {
-                rightmax[i] = rightmax[i+1];
+                rightMax[i] = rightMax[i+1];
             }
         }
 
-        for(int i = 0; i<rightmax.length; i++) {
-            System.out.print(rightmax[i]+ " ");
+        for (int j : rightMax) {
+            System.out.print(j + " ");
         }
     }
 }
