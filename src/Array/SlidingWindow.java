@@ -1,5 +1,5 @@
 /*
-     max sum of subaary having length k using sliding window algorithm
+     max sum of sub array having length k using sliding window algorithm
  */
 
 package Array;
@@ -8,6 +8,7 @@ public class SlidingWindow {
     public static void main(String[] args) {
         int []arr = new int[]{-3, 4, -2, 5, 3, -2, 8, 2, 1, 4};
 
+        //length of subarray
         int k = 4;
 
         int sum = 0;
@@ -28,3 +29,9 @@ public class SlidingWindow {
         System.out.println(maxSum);
     }
 }
+
+
+/*
+     time complexity = O(n)
+     space complexity = O(1)
+ */
