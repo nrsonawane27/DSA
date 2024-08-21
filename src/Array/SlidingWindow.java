@@ -32,6 +32,6 @@ public class SlidingWindow {
 
 
 /*
-     time complexity = O(n)
-     space complexity = O(1)
+     time complexity = O(n) -------linear complexity
+     space complexity = O(1) -------constant complexity
  */
