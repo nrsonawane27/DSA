@@ -10,15 +10,16 @@ package Array;
 
 public class CountOfPair {
 
+    //method to count the pair
     public static int count (char []ch, char m, char n) {
         int count = 0;
-        int aCount =0;
+        int mCount =0;
 
         for(int i=0; i<ch.length; i++) {
             if (ch[i] == m) {
-                aCount++; // Increment count of 'a'
+                mCount++; // Increment count of 'm'
             } else if (ch[i] == n) {
-                count += aCount; // Every 'g' found adds to count all previous 'a' counts
+                count += mCount; // Every 'g' found adds to count all previous 'a' counts
             }
         }
 
@@ -28,18 +29,6 @@ public class CountOfPair {
 
     public static void main(String[] args) {
         char []ch = {'a', 'b', 'e', 'g', 'a', 'g'};
-//        int count = 0;
-//        int aCount =0;
-//
-//        for(int i=0; i<ch.length; i++) {
-//            if (ch[i] == 'a') {
-//                aCount++; // Increment count of 'a'
-//            } else if (ch[i] == 'g') {
-//                count += aCount; // Every 'g' found adds to count all previous 'a' counts
-//            }
-//        }
-//        System.out.println(aCount);
-//        System.out.println(count);
 
         System.out.println("Count of pair(m,n) : " +count(ch, 'b', 'g'));
     }
