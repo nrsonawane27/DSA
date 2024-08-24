@@ -1,6 +1,6 @@
 /*
-   Given an array of size N. Build an array rightmax of size N.
-   Rightmax of i contains the maximum for the index i to the index N-1.
+   Given an array of size N. Build an array right max of size N.
+   Right max of i contains the maximum for the index i to the index N-1.
    (Using carry forward method)
  */
 package Array;
