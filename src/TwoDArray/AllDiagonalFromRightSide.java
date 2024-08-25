@@ -17,6 +17,7 @@ public class AllDiagonalFromRightSide {
         int start = 0;
         int end = arr[0].length-1;
         int count = 1;
+
         while( end >= start) {
             int i = 0;
             int j = end;

@@ -3,6 +3,7 @@
    Right max of i contains the maximum for the index i to the index N-1.
    (Using carry forward method)
  */
+
 package Array;
 public class RightMax {
     public static void main(String [] args) {
