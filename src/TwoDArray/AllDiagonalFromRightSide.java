@@ -14,13 +14,14 @@ public class AllDiagonalFromRightSide {
         arr[2] = new int[]{11,12,13,14,15};
         arr[3] = new int[]{16,17,18,19,20};
 
-        int start = 1;
+        int start = 0;
         int end = arr[0].length-1;
-        while( end >= 0) {
+        int count = 1;
+        while( end >= start) {
             int i = 0;
             int j = end;
 
-            System.out.print("Diagonal  " +start+ " : " );
+            System.out.print("Diagonal  " +count+ " : " );
             while(i< arr.length && j >= 0) {
                 System.out.print(arr[i][j]+" ");
                 i++;
@@ -29,7 +30,8 @@ public class AllDiagonalFromRightSide {
             }
 
             System.out.println();
-            start++;
+            start = 0;
+            count ++;
             end--;
         }
     }
