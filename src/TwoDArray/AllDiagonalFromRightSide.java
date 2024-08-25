@@ -36,3 +36,8 @@ public class AllDiagonalFromRightSide {
         }
     }
 }
+
+/*
+  time complexity = O(n^2) -------quadratic complexity
+  space complexity = O(1) -------constant complexity
+ */
