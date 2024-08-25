@@ -1,3 +1,9 @@
+/*
+    print the all diagonals of a matrix from right to left
+    A. starts from 0th rows
+    B. All diagonals
+ */
+
 package TwoDArray;
 
 public class AllDiagonalFromRightSide {
