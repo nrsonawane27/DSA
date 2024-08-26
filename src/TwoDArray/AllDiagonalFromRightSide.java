@@ -8,6 +8,7 @@ package TwoDArray;
 
 public class AllDiagonalFromRightSide {
     public static void main(String[] args) {
+
         int [][]arr = new int[4][5];
         arr[0] = new int[]{1,2,3,4,5};
         arr[1] = new int[]{6,7,8,9,10};
