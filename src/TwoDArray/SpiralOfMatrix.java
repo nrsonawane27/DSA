@@ -1,3 +1,7 @@
+/*
+     print the element of square or rectangular matrix
+     in spiral format
+ */
 package TwoDArray;
 
 public class SpiralOfMatrix {
