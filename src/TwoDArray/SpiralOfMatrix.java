@@ -60,3 +60,8 @@ public class SpiralOfMatrix {
         }
     }
 }
+
+/*
+   time complexity = O(n) -------quadratic complexity
+  space complexity = O(1) -------constant complexity
+ */
