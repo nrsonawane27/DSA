@@ -1,3 +1,9 @@
+/*
+    Given a matrix of N * N .Rotate the matrix
+    90 degree clockwise from the top right corner.
+    Note : (No new matrix)
+ */
+
 package TwoDArray;
 
 public class Roatate90DegreeClockwise {
