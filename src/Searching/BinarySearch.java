@@ -1,6 +1,9 @@
+// Binary search without recursion
 package Searching;
 
 public class BinarySearch {
+
+    //binary search
     public static int Binary(int arr[], int search) {
         int start = 0;
         int end = arr.length - 1;
