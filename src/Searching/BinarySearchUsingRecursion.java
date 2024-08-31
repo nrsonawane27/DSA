@@ -1,3 +1,5 @@
+//Binary search using recursion
+
 package Searching;
 
 public class BinarySearchUsingRecursion {
