@@ -26,7 +26,7 @@ public class BinarySearchUsingRecursion {
 
     public static void main(String[] args) {
         int []arr = {4, 7, 11, 24, 37, 55, 75, 87};
-        int search =88;
+        int search =37;
 
         int start = 0;
         int end = arr.length - 1;
