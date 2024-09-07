@@ -15,14 +15,6 @@ public class SumOfDigitInNumber {
 //        sum(num/10);
         return num % 10 + sum(num/10) ;
 
-//       //using while loop
-//        int sum = 0;
-//        while(num > 0) {
-//            int rem = num % 10;
-//            sum += rem;
-//            num /= 10;
-//        }
-//        return sum;
     }
     public static void main(String[] args) {
         SumOfDigitInNumber obj = new SumOfDigitInNumber();
