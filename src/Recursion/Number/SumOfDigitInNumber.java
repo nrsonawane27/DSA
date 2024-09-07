@@ -1,3 +1,5 @@
+//Write a program to add the digit of number
+
 package Recursion.Number;
 
 public class SumOfDigitInNumber {
