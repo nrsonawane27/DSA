@@ -1,3 +1,5 @@
+//check whether the number is prime or not
+
 package Recursion.Number;
 
 import java.util.Scanner;
