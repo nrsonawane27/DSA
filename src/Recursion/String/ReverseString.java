@@ -22,7 +22,5 @@ public class ReverseString {
 //        int length = str.length()-1;
         int length = 0;
         System.out.println("reverse string is : " +reverseString(str, length));
-
-
     }
 }
