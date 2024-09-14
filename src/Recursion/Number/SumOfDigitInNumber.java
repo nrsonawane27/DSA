@@ -18,7 +18,7 @@ public class SumOfDigitInNumber {
     }
     public static void main(String[] args) {
         SumOfDigitInNumber obj = new SumOfDigitInNumber();
-        int res = obj.sum(123);
+        int res = obj.sum(1234);
         System.out.println(res);
     }
 }
