@@ -55,7 +55,6 @@ public class ProductOfArrayElement {
             }
 
             System.out.println(productOfElement(arr, mod));
-
         }
     }
 }
