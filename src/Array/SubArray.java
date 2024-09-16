@@ -3,7 +3,6 @@ package Array;
 import java.util.Scanner;
 
 public class SubArray {
-
     //Method for Subarray
     public static void sub(int number[]){
         for(int i=0;i<number.length;i++){
@@ -33,7 +32,5 @@ public class SubArray {
         //subarray of array
         System.out.println("\nsubarrays of array\n");
         sub(number);
-
-
     }
 }
