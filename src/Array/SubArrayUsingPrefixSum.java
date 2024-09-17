@@ -37,7 +37,5 @@ public class SubArrayUsingPrefixSum {
         //maximum sum of subarray of given array
         System.out.println("\nsubarray of array\n");
         sub(arr);
-
-
     }
 }
