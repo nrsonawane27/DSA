@@ -13,7 +13,7 @@ public class LastIndexOfOne {
     }
 
     public static void main(String[] args) {
-        String str = "001100000";
+        String str = "001000001111";
         System.out.println(lastIndex(str));
     }
 }
