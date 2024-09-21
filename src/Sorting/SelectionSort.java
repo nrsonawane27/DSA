@@ -4,6 +4,7 @@ public class SelectionSort {
 
     public static void selectionSort(int arr[]) {
         int N = arr.length;
+        int count = 0;
         for(int i = 0; i < N; i++) {
             boolean swapped = false;
             int minIndex = i;
@@ -12,6 +13,7 @@ public class SelectionSort {
                 if(arr[j] < arr[minIndex]) {
                     minIndex = j;
                 }
+                count++;
             }
 
             if(arr[i] != arr[minIndex]) {
@@ -25,6 +27,7 @@ public class SelectionSort {
                 break;
             }
         }
+        System.out.println(count);
     }
 
     public static void print(int arr[]) {
