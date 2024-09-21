@@ -16,9 +16,9 @@ public class BubbleSortUsingRecursion {
                 swapped = true;
             }
             count++;
-            if(swapped == false) {
-                break;
-            }
+        }
+        if(swapped == false) {
+            return;
         }
         bubbleSort(arr, N-1);
     }
@@ -30,9 +30,9 @@ public class BubbleSortUsingRecursion {
         }
     }
     public static void main(String[] args) {
-//        int arr[] = {64, 34, 25, 12, 22, 11};
+        int arr[] = {64, 34, 25, 12, 22, 11};
 //        int arr[] = {2, 3, 4, 6, 8, 7};
-        int arr[] = {2, 3, 4, 6, 5, 7, 9, 8};
+//        int arr[] = {2, 3, 4, 6, 5, 7, 9, 8};
 
 
         int N = arr.length;
