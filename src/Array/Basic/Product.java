@@ -56,7 +56,6 @@ public class Product {
         for(int i = 0; i < M; i++) {
             arr2[i] = sc.nextInt();
         }
-
         System.out.println(productOfMaxMinElementFromDifferentArray(arr1, arr2));
     }
 }
