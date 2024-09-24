@@ -2,8 +2,7 @@ package LinkedList.Concept;
 
 import java.util.Scanner;
 
-public class LinkedList  {
-
+public class LinkedList {
     public class Node {
         int data;
         Node next = null;
@@ -266,7 +265,7 @@ public class LinkedList  {
                     break;
 
                 case 9 :
-                   int count = ll.countNode();
+                    int count = ll.countNode();
                     System.out.println("Total number of node : " +count);
                     break;
 
@@ -284,4 +283,5 @@ public class LinkedList  {
         } while(con == 'Y' || con == 'y');
 
     }
+
 }
