@@ -170,7 +170,24 @@ public class LinkedList {
 
     //Reverse the linked list
     void reversell() {
-        Node temp = head;
+        Node previous = null;
+        Node current = head;
+        Node temp = head.next;
+
+        while(temp != null){
+
+
+            current.next = previous;
+//            if(temp == null) {
+//                head = current;
+//                return;
+//            }
+            previous = current;
+            current = temp;
+            temp = current.next;
+        }
+        current.next = previous;
+        head = current;
     }
 
     //print the linked list
@@ -193,95 +210,103 @@ public class LinkedList {
 
         LinkedList ll = new LinkedList();
 
-        char con = 'y';
+        ll.addFirst(10);
+        ll.addFirst(20);
+        ll.addFirst(30);
+        ll.addFirst(40);
+        ll.print();
+        ll.reversell();
+        ll.print();
 
-        do {
-
-            System.out.println("Perform operations on linked list");
-            System.out.println("1.Add node at first");
-            System.out.println("2.Add node at last");
-            System.out.println("3.Add node at any position");
-            System.out.println("4.Delete node from first");
-            System.out.println("5.Delete node from last");
-            System.out.println("6.Delete node from any position");
-            System.out.println("7.Search node");
-            System.out.println("8.Reverse linked list");
-            System.out.println("9.Count node");
-            System.out.println("10.Print Linked List");
-
-            System.out.print("\nEnter choice to perfrom operation : ");
-            int ch = sc.nextInt();
-
-            switch(ch) {
-                case 1 :
-                    System.out.print("Enter data : ");
-                    int data = sc.nextInt();
-                    ll.addFirst(data);
-                    break;
-
-                case 2 :
-                    System.out.print("Enter data : ");
-                    data = sc.nextInt();
-                    ll.addLast(data);
-                    break;
-
-                case 3 :
-                    System.out.print("Enter data : ");
-                    data = sc.nextInt();
-                    System.out.print("Enter position : ");
-                    int pos = sc.nextInt();
-                    ll.addAtPos(pos,data);
-                    break;
-
-                case 4 :
-                    ll.deleteFirst();
-                    break;
-
-                case 5 :
-                    ll.deleteLast();
-                    break;
-
-                case 6 :
-                    System.out.print("Enter position : ");
-                    pos = sc.nextInt();
-                    ll.deleteAtPos(pos);
-                    break;
-
-                case 7 :
-                    System.out.print("Enter data : ");
-                    data = sc.nextInt();
-                    pos = ll.searchNode(data);
-                    if(pos == -1) {
-                        System.out.println("Node not found");
-                    } else {
-                        System.out.println("Node is found at : " +pos);
-                    }
-                    break;
-
-                case 8 :
+//        char con = 'y';
+//
+//        do {
+//
+//            System.out.println("Perform operations on linked list");
+//            System.out.println("1.Add node at first");
+//            System.out.println("2.Add node at last");
+//            System.out.println("3.Add node at any position");
+//            System.out.println("4.Delete node from first");
+//            System.out.println("5.Delete node from last");
+//            System.out.println("6.Delete node from any position");
+//            System.out.println("7.Search node");
+//            System.out.println("8.Reverse linked list");
+//            System.out.println("9.Count node");
+//            System.out.println("10.Print Linked List");
+//
+//            System.out.print("\nEnter choice to perfrom operation : ");
+//            int ch = sc.nextInt();
+//
+//            switch(ch) {
+//                case 1 :
 //                    System.out.print("Enter data : ");
 //                    int data = sc.nextInt();
 //                    ll.addFirst(data);
-                    break;
-
-                case 9 :
-                    int count = ll.countNode();
-                    System.out.println("Total number of node : " +count);
-                    break;
-
-                case 10 :
-                    ll.print();
-                    break;
-
-                default :
-                    System.out.println("Enter the valid choice");
-            }
-
-            System.out.print("Do you want to continue ? : ");
-            con = sc.next().charAt(0);
-
-        } while(con == 'Y' || con == 'y');
-
+//                    break;
+//
+//                case 2 :
+//                    System.out.print("Enter data : ");
+//                    data = sc.nextInt();
+//                    ll.addLast(data);
+//                    break;
+//
+//                case 3 :
+//                    System.out.print("Enter data : ");
+//                    data = sc.nextInt();
+//                    System.out.print("Enter position : ");
+//                    int pos = sc.nextInt();
+//                    ll.addAtPos(pos,data);
+//                    break;
+//
+//                case 4 :
+//                    ll.deleteFirst();
+//                    break;
+//
+//                case 5 :
+//                    ll.deleteLast();
+//                    break;
+//
+//                case 6 :
+//                    System.out.print("Enter position : ");
+//                    pos = sc.nextInt();
+//                    ll.deleteAtPos(pos);
+//                    break;
+//
+//                case 7 :
+//                    System.out.print("Enter data : ");
+//                    data = sc.nextInt();
+//                    pos = ll.searchNode(data);
+//                    if(pos == -1) {
+//                        System.out.println("Node not found");
+//                    } else {
+//                        System.out.println("Node is found at : " +pos);
+//                    }
+//                    break;
+//
+//                case 8 :
+////                    System.out.print("Enter data : ");
+////                    int data = sc.nextInt();
+////                    ll.addFirst(data);
+//                    break;
+//
+//                case 9 :
+//                    int count = ll.countNode();
+//                    System.out.println("Total number of node : " +count);
+//                    break;
+//
+//                case 10 :
+//                    ll.print();
+//                    break;
+//
+//                default :
+//                    System.out.println("Enter the valid choice");
+//            }
+//
+//            System.out.print("Do you want to continue ? : ");
+//            con = sc.next().charAt(0);
+//
+//        } while(con == 'Y' || con == 'y');
+//
     }
 
 }
