@@ -190,8 +190,6 @@ public class DoublyLinkedList {
         Node temp = head.next;
 
         while(temp != null){
-
-
             current.next = previous;
 //            if(temp == null) {
 //                head = current;
@@ -200,7 +198,7 @@ public class DoublyLinkedList {
             previous = current;
             current = temp;
             temp = current.next;
-            current.prev = temp;
+            current.prev.prev = current;
         }
         current.next = previous;
         current.prev = temp;
@@ -217,7 +215,7 @@ public class DoublyLinkedList {
 
         Node temp = head;
         while(temp != null) {
-            System.out.print(temp.data +" -> ");
+            System.out.print(temp.prev + " " +temp.data + " " +temp.next+ " -> ");
             temp = temp.next;
 
         }
