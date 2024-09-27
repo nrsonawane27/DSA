@@ -298,7 +298,5 @@ public class LinkedList {
             con = sc.next().charAt(0);
 
         } while(con == 'Y' || con == 'y');
-
     }
-
 }
