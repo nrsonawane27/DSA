@@ -29,7 +29,7 @@ public class SubArarryWithGivenSum {
         }
 
         if(startIdx == -1) {
-            System.out.println("Sum not found");
+            System.out.println("No sub array found");
         } else {
             System.out.println("Sum found between indexes "+startIdx+" and "+ endIdx);
         }
