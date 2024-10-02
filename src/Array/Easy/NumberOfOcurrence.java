@@ -1,3 +1,4 @@
+//12
 package Array.Easy;
 
 public class NumberOfOcurrence {
