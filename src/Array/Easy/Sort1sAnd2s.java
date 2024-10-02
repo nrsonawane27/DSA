@@ -1,3 +1,4 @@
+//2
 package Array.Easy;
 
 public class Sort1sAnd2s {
