@@ -170,24 +170,77 @@ public class LinkedList {
 
     //Reverse the linked list
     void reversell() {
+
+        if(head == null) {
+            System.out.println("Linkedlist is empty");
+            return;
+        }
         Node previous = null;
         Node current = head;
-        Node temp = head.next;
+        Node temp;
 
-        while(temp != null){
-
-
+        while(current != null){
+            temp = current.next;
             current.next = previous;
-//            if(temp == null) {
-//                head = current;
-//                return;
-//            }
             previous = current;
             current = temp;
-            temp = current.next;
         }
-        current.next = previous;
-        head = current;
+        head = previous;
+    }
+
+    //reverse linkedlist using recursion
+    void reverseRecu(Node curr, Node prev) {
+
+        if(curr == null) {
+            head = prev;
+            return;
+        }
+
+        Node temp = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = temp;
+
+        reverseRecu(curr, prev);
+    }
+
+    //middle element approach 1
+    void middleElement1() {
+        if(countNode() == 0) {
+            System.out.println("LinkedList empty");
+            return;
+        }
+
+        int count = 0;
+        int len = countNode();
+        Node temp = head;
+        while(count < len / 2) {
+            temp = temp .next;
+            count++;
+        }
+
+        System.out.println(temp.data);
+    }
+
+    //middle element approach 1
+    void middleElement2() {
+        if(countNode() == 0) {
+            System.out.println("LinkedList empty");
+            return;
+        }
+
+        Node slow = head;
+        Node fast = head.next;
+
+        while(fast != null) {
+            fast = fast .next;
+            if(fast != null) {
+                fast = fast.next;
+            }
+            slow = slow.next;
+        }
+
+        System.out.println(slow.data);
     }
 
     //print the linked list
@@ -223,8 +276,11 @@ public class LinkedList {
             System.out.println("6.Delete node from any position");
             System.out.println("7.Search node");
             System.out.println("8.Reverse linked list");
-            System.out.println("9.Count node");
-            System.out.println("10.Print Linked List");
+            System.out.println("9.Reverse linked list");
+            System.out.println("10.Count node");
+            System.out.println("11.Middle Eleemnt 1");
+            System.out.println("12.Middle Element 2");
+            System.out.println("13.Print Linked List");
 
             System.out.print("\nEnter choice to perfrom operation : ");
             int ch = sc.nextInt();
@@ -276,17 +332,29 @@ public class LinkedList {
                     break;
 
                 case 8 :
-//                    System.out.print("Enter data : ");
-//                    int data = sc.nextInt();
-//                    ll.addFirst(data);
+                    ll.reversell();
                     break;
 
                 case 9 :
+                    Node curr = ll.head;
+                    Node prev = null;
+                    ll.reverseRecu(curr, prev);
+                    break;
+
+                case 10 :
                     int count = ll.countNode();
                     System.out.println("Total number of node : " +count);
                     break;
 
-                case 10 :
+                case 11 :
+                    ll.middleElement1();
+                    break;
+
+                case 12 :
+                    ll.middleElement2();
+                    break;
+
+                case 13 :
                     ll.print();
                     break;
 
