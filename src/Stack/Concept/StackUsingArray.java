@@ -1,7 +1,5 @@
 package Stack.Concept;
 
-import LinkedList.Concept.LinkedList;
-
 import java.util.Scanner;
 
 public class StackUsingArray {
@@ -16,41 +14,31 @@ public class StackUsingArray {
             this.maxSize = size;
         }
 
-        int push(int element) {
+        void push(int element) {
             if(top == maxSize-1) {
                 System.out.println("Stack is overflow");
-                return -1;
+                return;
             }
 
             stackArr[++top] = element;
-            return stackArr[top];
         }
 
         boolean isEmpty() {
-            if(top == -1) {
-                return true;
-            }
-
-            return false;
+            return top == -1;
         }
 
         boolean isFull() {
-            if(top == maxSize-1) {
-                return true;
-            }
-
-            return false;
+            return top == maxSize - 1;
         }
 
-        int pop() {
+        void pop() {
             if(isEmpty()) {
-                return top;
+                return;
             }
 
             int element = stackArr[top];
             top--;
 
-            return element;
         }
 
         int peek() {
@@ -104,7 +92,7 @@ public class StackUsingArray {
                     }
                 }
 
-                if(swap == false) {
+                if(!swap) {
                     return;
                 }
             }
