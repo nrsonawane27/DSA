@@ -208,6 +208,5 @@ public class StackUsingArray {
             con = sc.next().charAt(0);
 
         } while(con == 'Y' || con == 'y');
-
     }
 }
