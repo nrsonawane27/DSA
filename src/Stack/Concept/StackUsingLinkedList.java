@@ -181,5 +181,4 @@ public class StackUsingLinkedList {
 
         } while(con == 'Y' || con == 'y');
     }
-
 }
