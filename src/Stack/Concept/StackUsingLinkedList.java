@@ -71,6 +71,26 @@ public class StackUsingLinkedList {
             return size;
         }
 
+        void reverse() {
+            if(isEmpty()) {
+                System.out.println("Stack is empty");
+                return;
+            }
+
+            Node previous = null;
+            Node current = head;
+            Node temp;
+
+            while(current != null){
+                temp = current.next;
+                current.next = previous;
+                previous = current;
+                current = temp;
+            }
+            head = previous;
+        }
+
+
         void print() {
             if(isEmpty()) {
                 System.out.println("Stack is empty");
@@ -80,9 +100,10 @@ public class StackUsingLinkedList {
             Node temp = head;
 
             while(temp != null) {
-                System.out.println(temp.data+" ");
+                System.out.print(temp.data+" ");
                 temp = temp.next;
             }
+            System.out.println();
         }
 
     }
@@ -99,12 +120,11 @@ public class StackUsingLinkedList {
             System.out.println("1.Push element");
             System.out.println("2.Pop element");
             System.out.println("3.Check stack is empty or not");
-            System.out.println("4.Check stack is full or not");
-            System.out.println("5.Peek element");
-            System.out.println("6.Size of stack");
-            System.out.println("7.Sort Stack");
-            System.out.println("8.Reverse Stack");
-            System.out.println("9.Print Stack");
+            System.out.println("4.Peek element");
+            System.out.println("5.Size of stack");
+            System.out.println("6.Sort Stack");
+            System.out.println("7.Reverse Stack");
+            System.out.println("8.Print Stack");
 
             System.out.print("\nEnter choice to perfrom operation : ");
             int ch = sc.nextInt();
@@ -129,18 +149,10 @@ public class StackUsingLinkedList {
                     break;
 
                 case 4 :
-////                    if(s.isFull()) {
-//                        System.out.println("Stack is full");
-//                    } else {
-//                        System.out.println("Stack is not full");
-//                    }
-                    break;
-
-                case 5 :
                     System.out.println(s.peek());
                     break;
 
-                case 6 :
+                case 5 :
                     if(s.size() == -1) {
                         System.out.println("Stack is empty");
                     } else {
@@ -148,15 +160,15 @@ public class StackUsingLinkedList {
                     }
                     break;
 
-                case 7 :
+                case 6 :
 //                    s.sort();
                     break;
 
-                case 8 :
-//                    s.reverse();
+                case 7 :
+                    s.reverse();
                     break;
 
-                case 9 :
+                case 8 :
                     s.print();
                     break;
 
