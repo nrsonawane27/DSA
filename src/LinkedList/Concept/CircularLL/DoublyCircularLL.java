@@ -121,7 +121,6 @@ public class DoublyCircularLL {
         head = head.next;
         head.prev = tail;
         tail.next = head;
-
     }
 
     //delete last node
