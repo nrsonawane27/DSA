@@ -222,7 +222,6 @@ public class DoublyCircularLL {
         current.next = previous;
         head = previous;
         tail = previous;
-
     }
 
     //print the linked list
