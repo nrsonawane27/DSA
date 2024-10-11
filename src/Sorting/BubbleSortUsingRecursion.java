@@ -30,8 +30,8 @@ public class BubbleSortUsingRecursion {
         }
     }
     public static void main(String[] args) {
-        int arr[] = {64, 34, 25, 12, 22, 11};
-//        int arr[] = {2, 3, 4, 6, 8, 7};
+//        int arr[] = {64, 34, 25, 12, 22, 11};
+        int arr[] = {2, 3, 4, 6, 8, 7};
 //        int arr[] = {2, 3, 4, 6, 5, 7, 9, 8};
 
 
