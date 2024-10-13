@@ -38,7 +38,7 @@ public class CeilTheFloor {
         System.out.print("Enter the size of array : ");
         int N = sc.nextInt();
 
-        int arr[] = new int[N];
+        int[] arr = new int[N];
 
         System.out.println("\nEnter the array element :");
         for(int i = 0; i < N; i++) {
