@@ -25,7 +25,7 @@ public class ClosestNumber {
     }
     public static void main(String[] args) {
 //        int arr[] = {1, 3, 6, 7};
-        int arr[] = {1, 2, 3, 5, 9};
+        int[] arr = {1, 2, 3, 5, 9};
 
         System.out.println("Closest number of K from array : " +closestNum(arr, 7));
     }
