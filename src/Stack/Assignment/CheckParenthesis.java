@@ -39,6 +39,5 @@ public class CheckParenthesis {
         } else {
             System.out.println("Invalid");
         }
-
     }
 }
