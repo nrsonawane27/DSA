@@ -24,11 +24,7 @@ public class CheckParenthesis {
             }
         }
 
-        if(s.empty()) {
-            return true;
-        } else {
-            return false;
-        }
+        return s.empty();
     }
 
     public static void main(String[] args) {
