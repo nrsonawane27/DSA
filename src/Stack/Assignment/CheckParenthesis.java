@@ -38,7 +38,6 @@ public class CheckParenthesis {
 //        String str = "{([(){}])}])";
 //        String str = "()";
 
-
         if(validParenthesis(str)) {
             System.out.println("Valid");
         } else {
