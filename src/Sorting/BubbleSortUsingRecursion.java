@@ -3,7 +3,7 @@ package Sorting;
 public class BubbleSortUsingRecursion {
 
     static int count = 0;
-    public static void bubbleSort(int arr[], int N) {
+    public static void bubbleSort(int[] arr, int N) {
         if(N == 1)
             return;
 
@@ -17,21 +17,20 @@ public class BubbleSortUsingRecursion {
             }
             count++;
         }
-        if(swapped == false) {
+        if(!swapped) {
             return;
         }
         bubbleSort(arr, N-1);
     }
 
-    public static void print(int arr[]) {
-        int N = arr.length;
-        for(int i = 0; i < N; i++) {
-            System.out.print(arr[i] +" ");
+    public static void print(int[] arr) {
+        for (int j : arr) {
+            System.out.print(j + " ");
         }
     }
     public static void main(String[] args) {
 //        int arr[] = {64, 34, 25, 12, 22, 11};
-        int arr[] = {2, 3, 4, 6, 8, 7};
+        int[] arr = {2, 3, 4, 6, 8, 7};
 //        int arr[] = {2, 3, 4, 6, 5, 7, 9, 8};
 
 
