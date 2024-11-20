@@ -3,7 +3,7 @@ package LinkedList.Concept;
 import java.util.Scanner;
 
 public class LinkedList {
-    public class Node {
+    public static class Node {
         int data;
         Node next = null;
         Node(int data) {
