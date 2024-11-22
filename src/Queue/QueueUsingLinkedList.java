@@ -21,16 +21,16 @@ class QueueLL {
     }
 
     //method to add element
-    public Node enqueue(int data) {
+    public int enqueue(int data) {
         Node newNode = new Node(data);
         if(isEmpty()) {
             front = rear = newNode;
-            return newNode;
+            return data;
         }
 
         rear.next = newNode;
         rear = newNode;
-        return rear;
+        return data;
     }
 
     //delete from the queue
@@ -100,7 +100,7 @@ public class QueueUsingLinkedList {
             System.out.println("\nEnter a choice :");
             int choice = sc.nextInt();
 
-            Node temp;
+            int temp;
             int data;
 
             switch(choice) {
@@ -109,7 +109,7 @@ public class QueueUsingLinkedList {
                     System.out.println("Enter the data to add: ");
                     data = sc.nextInt();
                     temp = q.enqueue(data);
-                    if(temp != null) {
+                    if(temp != -1) {
                         System.out.println(data+" added in the queue");
                     }
                     break;
