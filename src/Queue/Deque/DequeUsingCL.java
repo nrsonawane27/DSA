@@ -1,4 +1,4 @@
-//deque using circular linked list
+//Deque using circular linked list
 
 package Queue.Deque;
 
