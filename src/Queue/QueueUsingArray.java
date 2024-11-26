@@ -1,6 +1,7 @@
+//Queue implementation using array
+
 package Queue;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class QueueUsingArray {
@@ -184,11 +185,4 @@ class Queue {
         }
         System.out.print(" ]");
     }
-
-
-
-
-
-
-
 }
