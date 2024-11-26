@@ -1,5 +1,5 @@
+//Deque implementation using array
 package Queue.Deque;
-
 
 import java.util.Scanner;
 
