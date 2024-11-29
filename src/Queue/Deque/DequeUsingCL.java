@@ -107,7 +107,7 @@ class QueueC {
             temp = temp.next;
         }
 
-        temp.next = front; // Maintain circular linkage
+        temp.next = front; 
         rear = temp;
 
         return data;
