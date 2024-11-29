@@ -17,7 +17,7 @@ class QueueCA {
         this.maxsize = size;
     }
 
-    //method to add element
+    //method to add element;
     public int enqueue(int data) {
         if(isFull()) {
             return -1;
