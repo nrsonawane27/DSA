@@ -14,6 +14,7 @@ public class MergeSortUsingRecursion {
 
         for(int i = 0; i < n2; i++) {
             arr2[i] = arr[mid+i+1];
+            String ch = "nikita";
         }
 
         int i = 0, j = 0, k = start;
